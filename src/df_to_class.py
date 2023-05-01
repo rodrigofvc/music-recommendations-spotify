@@ -5,6 +5,10 @@ import numpy as np
 from playlist import *
 from track import *
 
+"""
+    Read all the playlist with their metadata from the file in path_data
+    Return a list that contains all playlist
+"""
 def read_playlist(path_data):
     re = json.load(open(path_data))
     columns = ['name', 'collaborative', 'pid', 'modified_at', 'num_tracks', 'num_albums', 'num_followers', 'tracks', 'num_edits', 'duration_ms', 'num_artists', 'description']
@@ -28,4 +32,5 @@ def read_playlist(path_data):
         playlist_list.append(p)
     return playlist_list
 
+# Example
 read_playlist('dataset/mpd.slice.0-999-features.json')
