@@ -28,9 +28,9 @@ def read_playlist(path_data):
             if track['track_uri'] != features['uri'] :
                 raise()
             tracks_list.append(t)
-        p = Playlist(i, name_playlist, tracks_list)
+        p = Playlist(name_playlist, tracks_list)
         playlist_list.append(p)
     return playlist_list
 
 # Example
-read_playlist('dataset/mpd.slice.0-999-features.json')
+#read_playlist('dataset/mpd.slice.0-999-features.json')
