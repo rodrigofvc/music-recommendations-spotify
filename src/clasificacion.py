@@ -30,7 +30,7 @@ def transforma_playlist(cs, playlists):
         pl = playlists[i]
         for song in pl.tracks:
             X_list.append(proyeccion_unitaria(cs, song))
-            y_list.append(i)
+            y_list.append(pl.id)
     return (np.array(X_list), np.array(y_list))
 
 # Se reescalan los datos
