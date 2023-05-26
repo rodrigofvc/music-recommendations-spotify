@@ -1,10 +1,14 @@
 import requests
 
-token_url = "https://accounts.spotify.com/api/token"
-# Personal keys
-client_id = 'INSERTA TU CLIENT ID'
-client_secret = 'INSERTA TU CLIENT SECRET'
-data = {'grant_type': 'client_credentials', 'client_id': client_id, 'client_secret': client_secret}
+def request_token():
+    token_url = "https://accounts.spotify.com/api/token"
+    # Personal keys
+    client_id = ''
+    client_secret = ''
+    data = {'grant_type': 'client_credentials', 'client_id': client_id, 'client_secret': client_secret}
+    r = requests.post(token_url, data=data)
+    d = r.json()
+    print (d['access_token'])
+    return d['access_token']
 
-r = requests.post(token_url, data=data)
-print (r.text)
+#request_token()

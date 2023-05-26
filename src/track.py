@@ -20,6 +20,9 @@ class Track():
         analysis_url
         duration_ms
         time_signature
+        popularity_track
+        popularity_album
+        popularity_artist
     """
     def __init__(self, name, artist_name, features):
         self.name = name
