@@ -3,6 +3,7 @@ import numpy as np
 from df_to_class import read_playlist
 from sklearn.neural_network import MLPClassifier
 from sklearn.model_selection import StratifiedKFold
+from sklearn.model_selection import cross_val_score
 
 ## Selecciona solo los atributos que aparecen en la lista de columnas
 # @param columnas lista de nombres de columnas
@@ -51,7 +52,8 @@ def aciertos(y_pred, y_real):
             ac += 1
     return ac/y_pred.shape[0]
 
-# devuelve los aciertos promedio
+## devuelve los aciertos promedio
+# @param ns número de splits en el k fold
 def evalua(ns, X, y, clasificador):
     skf = StratifiedKFold(n_splits=ns)
     razon_aciertos = 0
@@ -68,12 +70,13 @@ def evalua(ns, X, y, clasificador):
 # Método principal
 def main():
     proy = ['danceability', 'energy', 'loudness', 'mode', 'speechiness',
-            'acousticness', 'instrumentalness', 'liveness', 'valence', 'tempo']
+            'acousticness', 'instrumentalness', 'liveness', 'valence', 'tempo', 'duration_ms']
     playlist_set = read_playlist('dataset/mpd.slice.0-999-features.json')
     X, y = transforma_playlist(proy, playlist_set)
     X = reescalado(X)
     nn_clasif = MLPClassifier(solver='lbfgs', alpha=1e-5, hidden_layer_sizes=(5, 2), random_state=1)
-    razon_aciertos = evalua(6, X, y, nn_clasif)
-    print('Porcentaje de aciertos:', razon_aciertos*100)
+    #razon_aciertos = evalua(6, X, y, nn_clasif)
+    puntaje = np.mean(cross_val_score(nn_clasif, X, y, cv=6))
+    print('Puntaje', puntaje)
 
 main()
