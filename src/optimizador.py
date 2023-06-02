@@ -3,7 +3,6 @@
 
 import warnings
 
-import matplotlib.pyplot as plt
 import numpy as np
 import ConfigSpace
 
@@ -71,39 +70,13 @@ class MLP:
             )
 
             # Returns the 5-fold cross validation accuracy
-            dataset_data, dataset_target = read_ds.obten()
+            X, y = read_ds.obten2()
             cv = StratifiedKFold(n_splits=5, random_state=seed, shuffle=True)  # to make CV splits consistent
-            score = cross_val_score(classifier, dataset_data, dataset_target, cv=cv, error_score="raise")
+            score = cross_val_score(classifier, X, y, cv=cv, error_score="raise")
 
         return 1 - np.mean(score)
 # Fin de la clase
-    
-def plot_trajectory(facades: list[AbstractFacade]) -> None:
-    """Plots the trajectory (incumbents) of the optimization process."""
-    plt.figure()
-    plt.title("Trajectory")
-    plt.xlabel("Wallclock time [s]")
-    plt.ylabel(facades[0].scenario.objectives)
-    plt.ylim(0, 0.4)
 
-    for facade in facades:
-        X, Y = [], []
-        for item in facade.intensifier.trajectory:
-            # Single-objective optimization
-            assert len(item.config_ids) == 1
-            assert len(item.costs) == 1
-
-            y = item.costs[0]
-            x = item.walltime
-
-            X.append(x)
-            Y.append(y)
-
-        plt.plot(X, Y, label=facade.intensifier.__class__.__name__)
-        plt.scatter(X, Y, marker="x")
-
-    plt.legend()
-    plt.show()
 
 if __name__ == "__main__":
     mlp = MLP()
@@ -137,8 +110,6 @@ if __name__ == "__main__":
 
         # Let's optimize
         incumbent = smac.optimize()
-        print('Incumbent:\n', incumbent)
-        print('SMAC:\n', smac)
         # Get cost of default configuration
         default_cost = smac.validate(mlp.configspace.get_default_configuration())
         print(f"Default cost ({intensifier.__class__.__name__}): {default_cost}")
@@ -146,9 +117,8 @@ if __name__ == "__main__":
         # Let's calculate the cost of the incumbent
         incumbent_cost = smac.validate(incumbent)
         print(f"Incumbent cost ({intensifier.__class__.__name__}): {incumbent_cost}")
+        print('Incumbent:\n', incumbent)
 
         facades.append(smac)
 
-    # Let's plot it
-    plot_trajectory(facades)
 
