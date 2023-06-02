@@ -1,0 +1,827 @@
+{
+  "type": "Scheduler",
+  "id": "Scheduler-eddb18b4-c622-4a09-a43f-f85c5e840c6e",
+  "address": "tcp://127.0.0.1:32827",
+  "services": {
+    "dashboard": 46485
+  },
+  "started": 1685658434.8117256,
+  "workers": {
+    "tcp://127.0.0.1:32937": {
+      "type": "Worker",
+      "id": 13,
+      "host": "127.0.0.1",
+      "resources": {},
+      "local_directory": "/home/emmanuel/Documentos/Maestr\u00eda/Automatico/Proyecto/music-recommendations-spotify/src/smac3_output/dask-scratch-space/worker-8uq75ox9",
+      "name": 13,
+      "nthreads": 1,
+      "memory_limit": 1006846208,
+      "last_seen": 1685658437.1372528,
+      "services": {
+        "dashboard": 43669
+      },
+      "metrics": {
+        "task_counts": {},
+        "bandwidth": {
+          "total": 100000000,
+          "workers": {},
+          "types": {}
+        },
+        "digests_total_since_heartbeat": {},
+        "managed_bytes": 0,
+        "spilled_bytes": {
+          "memory": 0,
+          "disk": 0
+        },
+        "transfer": {
+          "incoming_bytes": 0,
+          "incoming_count": 0,
+          "incoming_count_total": 0,
+          "outgoing_bytes": 0,
+          "outgoing_count": 0,
+          "outgoing_count_total": 0
+        },
+        "event_loop_interval": 0.02,
+        "cpu": 0.0,
+        "memory": 156168192,
+        "time": 1685658437.1302876,
+        "host_net_io": {
+          "read_bps": 489852.50876447145,
+          "write_bps": 489852.50876447145
+        },
+        "host_disk_io": {
+          "read_bps": 0.0,
+          "write_bps": 0.0
+        },
+        "num_fds": 17
+      },
+      "status": "running",
+      "nanny": "tcp://127.0.0.1:39863"
+    },
+    "tcp://127.0.0.1:36729": {
+      "type": "Worker",
+      "id": 6,
+      "host": "127.0.0.1",
+      "resources": {},
+      "local_directory": "/home/emmanuel/Documentos/Maestr\u00eda/Automatico/Proyecto/music-recommendations-spotify/src/smac3_output/dask-scratch-space/worker-2bpkowpj",
+      "name": 6,
+      "nthreads": 1,
+      "memory_limit": 1006846208,
+      "last_seen": 1685658436.9445786,
+      "services": {
+        "dashboard": 40157
+      },
+      "metrics": {
+        "task_counts": {},
+        "bandwidth": {
+          "total": 100000000,
+          "workers": {},
+          "types": {}
+        },
+        "digests_total_since_heartbeat": {},
+        "managed_bytes": 0,
+        "spilled_bytes": {
+          "memory": 0,
+          "disk": 0
+        },
+        "transfer": {
+          "incoming_bytes": 0,
+          "incoming_count": 0,
+          "incoming_count_total": 0,
+          "outgoing_bytes": 0,
+          "outgoing_count": 0,
+          "outgoing_count_total": 0
+        },
+        "event_loop_interval": 0.02,
+        "cpu": 0.0,
+        "memory": 156209152,
+        "time": 1685658436.9205778,
+        "host_net_io": {
+          "read_bps": 0.0,
+          "write_bps": 0.0
+        },
+        "host_disk_io": {
+          "read_bps": 0.0,
+          "write_bps": 0.0
+        },
+        "num_fds": 17
+      },
+      "status": "running",
+      "nanny": "tcp://127.0.0.1:42163"
+    },
+    "tcp://127.0.0.1:37549": {
+      "type": "Worker",
+      "id": 0,
+      "host": "127.0.0.1",
+      "resources": {},
+      "local_directory": "/home/emmanuel/Documentos/Maestr\u00eda/Automatico/Proyecto/music-recommendations-spotify/src/smac3_output/dask-scratch-space/worker-t9prif8m",
+      "name": 0,
+      "nthreads": 1,
+      "memory_limit": 1006846208,
+      "last_seen": 1685658437.0198705,
+      "services": {
+        "dashboard": 35951
+      },
+      "metrics": {
+        "task_counts": {},
+        "bandwidth": {
+          "total": 100000000,
+          "workers": {},
+          "types": {}
+        },
+        "digests_total_since_heartbeat": {},
+        "managed_bytes": 0,
+        "spilled_bytes": {
+          "memory": 0,
+          "disk": 0
+        },
+        "transfer": {
+          "incoming_bytes": 0,
+          "incoming_count": 0,
+          "incoming_count_total": 0,
+          "outgoing_bytes": 0,
+          "outgoing_count": 0,
+          "outgoing_count_total": 0
+        },
+        "event_loop_interval": 0.02,
+        "cpu": 0.0,
+        "memory": 156246016,
+        "time": 1685658437.0061219,
+        "host_net_io": {
+          "read_bps": 87668.49748856178,
+          "write_bps": 87668.49748856178
+        },
+        "host_disk_io": {
+          "read_bps": 0.0,
+          "write_bps": 0.0
+        },
+        "num_fds": 17
+      },
+      "status": "running",
+      "nanny": "tcp://127.0.0.1:37111"
+    },
+    "tcp://127.0.0.1:37865": {
+      "type": "Worker",
+      "id": 3,
+      "host": "127.0.0.1",
+      "resources": {},
+      "local_directory": "/home/emmanuel/Documentos/Maestr\u00eda/Automatico/Proyecto/music-recommendations-spotify/src/smac3_output/dask-scratch-space/worker-cmjr_ysk",
+      "name": 3,
+      "nthreads": 1,
+      "memory_limit": 1006846208,
+      "last_seen": 1685658436.9401708,
+      "services": {
+        "dashboard": 40519
+      },
+      "metrics": {
+        "task_counts": {},
+        "bandwidth": {
+          "total": 100000000,
+          "workers": {},
+          "types": {}
+        },
+        "digests_total_since_heartbeat": {},
+        "managed_bytes": 0,
+        "spilled_bytes": {
+          "memory": 0,
+          "disk": 0
+        },
+        "transfer": {
+          "incoming_bytes": 0,
+          "incoming_count": 0,
+          "incoming_count_total": 0,
+          "outgoing_bytes": 0,
+          "outgoing_count": 0,
+          "outgoing_count_total": 0
+        },
+        "event_loop_interval": 0.02,
+        "cpu": 0.0,
+        "memory": 155979776,
+        "time": 1685658436.925491,
+        "host_net_io": {
+          "read_bps": 0.0,
+          "write_bps": 0.0
+        },
+        "host_disk_io": {
+          "read_bps": 0.0,
+          "write_bps": 0.0
+        },
+        "num_fds": 17
+      },
+      "status": "running",
+      "nanny": "tcp://127.0.0.1:44351"
+    },
+    "tcp://127.0.0.1:38623": {
+      "type": "Worker",
+      "id": 15,
+      "host": "127.0.0.1",
+      "resources": {},
+      "local_directory": "/home/emmanuel/Documentos/Maestr\u00eda/Automatico/Proyecto/music-recommendations-spotify/src/smac3_output/dask-scratch-space/worker-brr0hccg",
+      "name": 15,
+      "nthreads": 1,
+      "memory_limit": 1006846208,
+      "last_seen": 1685658437.2563872,
+      "services": {
+        "dashboard": 39355
+      },
+      "metrics": {
+        "task_counts": {},
+        "bandwidth": {
+          "total": 100000000,
+          "workers": {},
+          "types": {}
+        },
+        "digests_total_since_heartbeat": {},
+        "managed_bytes": 0,
+        "spilled_bytes": {
+          "memory": 0,
+          "disk": 0
+        },
+        "transfer": {
+          "incoming_bytes": 0,
+          "incoming_count": 0,
+          "incoming_count_total": 0,
+          "outgoing_bytes": 0,
+          "outgoing_count": 0,
+          "outgoing_count_total": 0
+        },
+        "event_loop_interval": 0.02,
+        "cpu": 0.0,
+        "memory": 156430336,
+        "time": 1685658437.2496061,
+        "host_net_io": {
+          "read_bps": 0.0,
+          "write_bps": 0.0
+        },
+        "host_disk_io": {
+          "read_bps": 0.0,
+          "write_bps": 0.0
+        },
+        "num_fds": 17
+      },
+      "status": "running",
+      "nanny": "tcp://127.0.0.1:35625"
+    },
+    "tcp://127.0.0.1:38805": {
+      "type": "Worker",
+      "id": 7,
+      "host": "127.0.0.1",
+      "resources": {},
+      "local_directory": "/home/emmanuel/Documentos/Maestr\u00eda/Automatico/Proyecto/music-recommendations-spotify/src/smac3_output/dask-scratch-space/worker-w6htren2",
+      "name": 7,
+      "nthreads": 1,
+      "memory_limit": 1006846208,
+      "last_seen": 1685658437.0845218,
+      "services": {
+        "dashboard": 38359
+      },
+      "metrics": {
+        "task_counts": {},
+        "bandwidth": {
+          "total": 100000000,
+          "workers": {},
+          "types": {}
+        },
+        "digests_total_since_heartbeat": {},
+        "managed_bytes": 0,
+        "spilled_bytes": {
+          "memory": 0,
+          "disk": 0
+        },
+        "transfer": {
+          "incoming_bytes": 0,
+          "incoming_count": 0,
+          "incoming_count_total": 0,
+          "outgoing_bytes": 0,
+          "outgoing_count": 0,
+          "outgoing_count_total": 0
+        },
+        "event_loop_interval": 0.02,
+        "cpu": 0.0,
+        "memory": 156106752,
+        "time": 1685658437.0759325,
+        "host_net_io": {
+          "read_bps": 0.0,
+          "write_bps": 0.0
+        },
+        "host_disk_io": {
+          "read_bps": 0.0,
+          "write_bps": 0.0
+        },
+        "num_fds": 17
+      },
+      "status": "running",
+      "nanny": "tcp://127.0.0.1:41217"
+    },
+    "tcp://127.0.0.1:39807": {
+      "type": "Worker",
+      "id": 10,
+      "host": "127.0.0.1",
+      "resources": {},
+      "local_directory": "/home/emmanuel/Documentos/Maestr\u00eda/Automatico/Proyecto/music-recommendations-spotify/src/smac3_output/dask-scratch-space/worker-z60ztdmm",
+      "name": 10,
+      "nthreads": 1,
+      "memory_limit": 1006846208,
+      "last_seen": 1685658437.0509176,
+      "services": {
+        "dashboard": 44449
+      },
+      "metrics": {
+        "task_counts": {},
+        "bandwidth": {
+          "total": 100000000,
+          "workers": {},
+          "types": {}
+        },
+        "digests_total_since_heartbeat": {},
+        "managed_bytes": 0,
+        "spilled_bytes": {
+          "memory": 0,
+          "disk": 0
+        },
+        "transfer": {
+          "incoming_bytes": 0,
+          "incoming_count": 0,
+          "incoming_count_total": 0,
+          "outgoing_bytes": 0,
+          "outgoing_count": 0,
+          "outgoing_count_total": 0
+        },
+        "event_loop_interval": 0.02,
+        "cpu": 0.0,
+        "memory": 156205056,
+        "time": 1685658437.0412621,
+        "host_net_io": {
+          "read_bps": 137647.6809749314,
+          "write_bps": 137647.6809749314
+        },
+        "host_disk_io": {
+          "read_bps": 0.0,
+          "write_bps": 0.0
+        },
+        "num_fds": 17
+      },
+      "status": "running",
+      "nanny": "tcp://127.0.0.1:34927"
+    },
+    "tcp://127.0.0.1:40461": {
+      "type": "Worker",
+      "id": 4,
+      "host": "127.0.0.1",
+      "resources": {},
+      "local_directory": "/home/emmanuel/Documentos/Maestr\u00eda/Automatico/Proyecto/music-recommendations-spotify/src/smac3_output/dask-scratch-space/worker-b628l0qs",
+      "name": 4,
+      "nthreads": 1,
+      "memory_limit": 1006846208,
+      "last_seen": 1685658437.043621,
+      "services": {
+        "dashboard": 39509
+      },
+      "metrics": {
+        "task_counts": {},
+        "bandwidth": {
+          "total": 100000000,
+          "workers": {},
+          "types": {}
+        },
+        "digests_total_since_heartbeat": {},
+        "managed_bytes": 0,
+        "spilled_bytes": {
+          "memory": 0,
+          "disk": 0
+        },
+        "transfer": {
+          "incoming_bytes": 0,
+          "incoming_count": 0,
+          "incoming_count_total": 0,
+          "outgoing_bytes": 0,
+          "outgoing_count": 0,
+          "outgoing_count_total": 0
+        },
+        "event_loop_interval": 0.02,
+        "cpu": 0.0,
+        "memory": 156246016,
+        "time": 1685658437.0335164,
+        "host_net_io": {
+          "read_bps": 0.0,
+          "write_bps": 0.0
+        },
+        "host_disk_io": {
+          "read_bps": 0.0,
+          "write_bps": 0.0
+        },
+        "num_fds": 17
+      },
+      "status": "running",
+      "nanny": "tcp://127.0.0.1:35693"
+    },
+    "tcp://127.0.0.1:40479": {
+      "type": "Worker",
+      "id": 8,
+      "host": "127.0.0.1",
+      "resources": {},
+      "local_directory": "/home/emmanuel/Documentos/Maestr\u00eda/Automatico/Proyecto/music-recommendations-spotify/src/smac3_output/dask-scratch-space/worker-2ljsc7_8",
+      "name": 8,
+      "nthreads": 1,
+      "memory_limit": 1006846208,
+      "last_seen": 1685658437.008466,
+      "services": {
+        "dashboard": 34959
+      },
+      "metrics": {
+        "task_counts": {},
+        "bandwidth": {
+          "total": 100000000,
+          "workers": {},
+          "types": {}
+        },
+        "digests_total_since_heartbeat": {},
+        "managed_bytes": 0,
+        "spilled_bytes": {
+          "memory": 0,
+          "disk": 0
+        },
+        "transfer": {
+          "incoming_bytes": 0,
+          "incoming_count": 0,
+          "incoming_count_total": 0,
+          "outgoing_bytes": 0,
+          "outgoing_count": 0,
+          "outgoing_count_total": 0
+        },
+        "event_loop_interval": 0.02,
+        "cpu": 0.0,
+        "memory": 156381184,
+        "time": 1685658436.9974034,
+        "host_net_io": {
+          "read_bps": 0.0,
+          "write_bps": 0.0
+        },
+        "host_disk_io": {
+          "read_bps": 0.0,
+          "write_bps": 0.0
+        },
+        "num_fds": 17
+      },
+      "status": "running",
+      "nanny": "tcp://127.0.0.1:46535"
+    },
+    "tcp://127.0.0.1:40507": {
+      "type": "Worker",
+      "id": 2,
+      "host": "127.0.0.1",
+      "resources": {},
+      "local_directory": "/home/emmanuel/Documentos/Maestr\u00eda/Automatico/Proyecto/music-recommendations-spotify/src/smac3_output/dask-scratch-space/worker-ngc6eq__",
+      "name": 2,
+      "nthreads": 1,
+      "memory_limit": 1006846208,
+      "last_seen": 1685658436.9571395,
+      "services": {
+        "dashboard": 42391
+      },
+      "metrics": {
+        "task_counts": {},
+        "bandwidth": {
+          "total": 100000000,
+          "workers": {},
+          "types": {}
+        },
+        "digests_total_since_heartbeat": {},
+        "managed_bytes": 0,
+        "spilled_bytes": {
+          "memory": 0,
+          "disk": 0
+        },
+        "transfer": {
+          "incoming_bytes": 0,
+          "incoming_count": 0,
+          "incoming_count_total": 0,
+          "outgoing_bytes": 0,
+          "outgoing_count": 0,
+          "outgoing_count_total": 0
+        },
+        "event_loop_interval": 0.02,
+        "cpu": 0.0,
+        "memory": 156311552,
+        "time": 1685658436.9424353,
+        "host_net_io": {
+          "read_bps": 1048778.3826120254,
+          "write_bps": 1048778.3826120254
+        },
+        "host_disk_io": {
+          "read_bps": 0.0,
+          "write_bps": 0.0
+        },
+        "num_fds": 17
+      },
+      "status": "running",
+      "nanny": "tcp://127.0.0.1:35407"
+    },
+    "tcp://127.0.0.1:40561": {
+      "type": "Worker",
+      "id": 9,
+      "host": "127.0.0.1",
+      "resources": {},
+      "local_directory": "/home/emmanuel/Documentos/Maestr\u00eda/Automatico/Proyecto/music-recommendations-spotify/src/smac3_output/dask-scratch-space/worker-161qn1fa",
+      "name": 9,
+      "nthreads": 1,
+      "memory_limit": 1006846208,
+      "last_seen": 1685658436.9693832,
+      "services": {
+        "dashboard": 46029
+      },
+      "metrics": {
+        "task_counts": {},
+        "bandwidth": {
+          "total": 100000000,
+          "workers": {},
+          "types": {}
+        },
+        "digests_total_since_heartbeat": {},
+        "managed_bytes": 0,
+        "spilled_bytes": {
+          "memory": 0,
+          "disk": 0
+        },
+        "transfer": {
+          "incoming_bytes": 0,
+          "incoming_count": 0,
+          "incoming_count_total": 0,
+          "outgoing_bytes": 0,
+          "outgoing_count": 0,
+          "outgoing_count_total": 0
+        },
+        "event_loop_interval": 0.02,
+        "cpu": 0.0,
+        "memory": 156454912,
+        "time": 1685658436.9569318,
+        "host_net_io": {
+          "read_bps": 709313.9099176103,
+          "write_bps": 709313.9099176103
+        },
+        "host_disk_io": {
+          "read_bps": 0.0,
+          "write_bps": 0.0
+        },
+        "num_fds": 17
+      },
+      "status": "running",
+      "nanny": "tcp://127.0.0.1:40831"
+    },
+    "tcp://127.0.0.1:42061": {
+      "type": "Worker",
+      "id": 12,
+      "host": "127.0.0.1",
+      "resources": {},
+      "local_directory": "/home/emmanuel/Documentos/Maestr\u00eda/Automatico/Proyecto/music-recommendations-spotify/src/smac3_output/dask-scratch-space/worker-vyvua93s",
+      "name": 12,
+      "nthreads": 1,
+      "memory_limit": 1006846208,
+      "last_seen": 1685658437.1235993,
+      "services": {
+        "dashboard": 44285
+      },
+      "metrics": {
+        "task_counts": {},
+        "bandwidth": {
+          "total": 100000000,
+          "workers": {},
+          "types": {}
+        },
+        "digests_total_since_heartbeat": {},
+        "managed_bytes": 0,
+        "spilled_bytes": {
+          "memory": 0,
+          "disk": 0
+        },
+        "transfer": {
+          "incoming_bytes": 0,
+          "incoming_count": 0,
+          "incoming_count_total": 0,
+          "outgoing_bytes": 0,
+          "outgoing_count": 0,
+          "outgoing_count_total": 0
+        },
+        "event_loop_interval": 0.02,
+        "cpu": 0.0,
+        "memory": 156381184,
+        "time": 1685658437.1159265,
+        "host_net_io": {
+          "read_bps": 0.0,
+          "write_bps": 0.0
+        },
+        "host_disk_io": {
+          "read_bps": 0.0,
+          "write_bps": 0.0
+        },
+        "num_fds": 17
+      },
+      "status": "running",
+      "nanny": "tcp://127.0.0.1:38593"
+    },
+    "tcp://127.0.0.1:42441": {
+      "type": "Worker",
+      "id": 1,
+      "host": "127.0.0.1",
+      "resources": {},
+      "local_directory": "/home/emmanuel/Documentos/Maestr\u00eda/Automatico/Proyecto/music-recommendations-spotify/src/smac3_output/dask-scratch-space/worker-5fkk61x_",
+      "name": 1,
+      "nthreads": 1,
+      "memory_limit": 1006846208,
+      "last_seen": 1685658436.9424658,
+      "services": {
+        "dashboard": 38121
+      },
+      "metrics": {
+        "task_counts": {},
+        "bandwidth": {
+          "total": 100000000,
+          "workers": {},
+          "types": {}
+        },
+        "digests_total_since_heartbeat": {},
+        "managed_bytes": 0,
+        "spilled_bytes": {
+          "memory": 0,
+          "disk": 0
+        },
+        "transfer": {
+          "incoming_bytes": 0,
+          "incoming_count": 0,
+          "incoming_count_total": 0,
+          "outgoing_bytes": 0,
+          "outgoing_count": 0,
+          "outgoing_count_total": 0
+        },
+        "event_loop_interval": 0.02,
+        "cpu": 0.0,
+        "memory": 156033024,
+        "time": 1685658436.925491,
+        "host_net_io": {
+          "read_bps": 0.0,
+          "write_bps": 0.0
+        },
+        "host_disk_io": {
+          "read_bps": 0.0,
+          "write_bps": 0.0
+        },
+        "num_fds": 17
+      },
+      "status": "running",
+      "nanny": "tcp://127.0.0.1:39507"
+    },
+    "tcp://127.0.0.1:43783": {
+      "type": "Worker",
+      "id": 11,
+      "host": "127.0.0.1",
+      "resources": {},
+      "local_directory": "/home/emmanuel/Documentos/Maestr\u00eda/Automatico/Proyecto/music-recommendations-spotify/src/smac3_output/dask-scratch-space/worker-nepmi9zd",
+      "name": 11,
+      "nthreads": 1,
+      "memory_limit": 1006846208,
+      "last_seen": 1685658437.0460856,
+      "services": {
+        "dashboard": 44585
+      },
+      "metrics": {
+        "task_counts": {},
+        "bandwidth": {
+          "total": 100000000,
+          "workers": {},
+          "types": {}
+        },
+        "digests_total_since_heartbeat": {},
+        "managed_bytes": 0,
+        "spilled_bytes": {
+          "memory": 0,
+          "disk": 0
+        },
+        "transfer": {
+          "incoming_bytes": 0,
+          "incoming_count": 0,
+          "incoming_count_total": 0,
+          "outgoing_bytes": 0,
+          "outgoing_count": 0,
+          "outgoing_count_total": 0
+        },
+        "event_loop_interval": 0.02,
+        "cpu": 0.0,
+        "memory": 156467200,
+        "time": 1685658437.0351553,
+        "host_net_io": {
+          "read_bps": 0.0,
+          "write_bps": 0.0
+        },
+        "host_disk_io": {
+          "read_bps": 0.0,
+          "write_bps": 0.0
+        },
+        "num_fds": 17
+      },
+      "status": "running",
+      "nanny": "tcp://127.0.0.1:38585"
+    },
+    "tcp://127.0.0.1:44871": {
+      "type": "Worker",
+      "id": 14,
+      "host": "127.0.0.1",
+      "resources": {},
+      "local_directory": "/home/emmanuel/Documentos/Maestr\u00eda/Automatico/Proyecto/music-recommendations-spotify/src/smac3_output/dask-scratch-space/worker-ho7rkje6",
+      "name": 14,
+      "nthreads": 1,
+      "memory_limit": 1006846208,
+      "last_seen": 1685658437.127445,
+      "services": {
+        "dashboard": 43279
+      },
+      "metrics": {
+        "task_counts": {},
+        "bandwidth": {
+          "total": 100000000,
+          "workers": {},
+          "types": {}
+        },
+        "digests_total_since_heartbeat": {},
+        "managed_bytes": 0,
+        "spilled_bytes": {
+          "memory": 0,
+          "disk": 0
+        },
+        "transfer": {
+          "incoming_bytes": 0,
+          "incoming_count": 0,
+          "incoming_count_total": 0,
+          "outgoing_bytes": 0,
+          "outgoing_count": 0,
+          "outgoing_count_total": 0
+        },
+        "event_loop_interval": 0.02,
+        "cpu": 0.0,
+        "memory": 156352512,
+        "time": 1685658437.119774,
+        "host_net_io": {
+          "read_bps": 161853.71445123345,
+          "write_bps": 161853.71445123345
+        },
+        "host_disk_io": {
+          "read_bps": 0.0,
+          "write_bps": 0.0
+        },
+        "num_fds": 17
+      },
+      "status": "running",
+      "nanny": "tcp://127.0.0.1:42661"
+    },
+    "tcp://127.0.0.1:45373": {
+      "type": "Worker",
+      "id": 5,
+      "host": "127.0.0.1",
+      "resources": {},
+      "local_directory": "/home/emmanuel/Documentos/Maestr\u00eda/Automatico/Proyecto/music-recommendations-spotify/src/smac3_output/dask-scratch-space/worker-7zdurzcn",
+      "name": 5,
+      "nthreads": 1,
+      "memory_limit": 1006846208,
+      "last_seen": 1685658436.9526353,
+      "services": {
+        "dashboard": 40453
+      },
+      "metrics": {
+        "task_counts": {},
+        "bandwidth": {
+          "total": 100000000,
+          "workers": {},
+          "types": {}
+        },
+        "digests_total_since_heartbeat": {},
+        "managed_bytes": 0,
+        "spilled_bytes": {
+          "memory": 0,
+          "disk": 0
+        },
+        "transfer": {
+          "incoming_bytes": 0,
+          "incoming_count": 0,
+          "incoming_count_total": 0,
+          "outgoing_bytes": 0,
+          "outgoing_count": 0,
+          "outgoing_count_total": 0
+        },
+        "event_loop_interval": 0.02,
+        "cpu": 0.0,
+        "memory": 156217344,
+        "time": 1685658436.9382274,
+        "host_net_io": {
+          "read_bps": 172784.16944488222,
+          "write_bps": 172784.16944488222
+        },
+        "host_disk_io": {
+          "read_bps": 0.0,
+          "write_bps": 0.0
+        },
+        "num_fds": 17
+      },
+      "status": "running",
+      "nanny": "tcp://127.0.0.1:34541"
+    }
+  }
+}

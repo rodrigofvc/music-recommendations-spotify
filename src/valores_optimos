@@ -1,0 +1,10 @@
+Incumbent:
+ Configuration(values={
+  'activation': 'tanh',
+  'batch_size': 214,
+  'learning_rate_init': 0.005599223654063347,
+  'n_layer': 4,
+  'n_neurons': 66,
+  'solver': 'adam',
+})
+
